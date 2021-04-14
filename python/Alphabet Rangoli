@@ -1,0 +1,15 @@
+#https://www.hackerrank.com/challenges/alphabet-rangoli/problem
+def print_rangoli(size):
+    # your code goes here
+    import string
+    a=string.ascii_lowercase
+    L=[]
+    for i in range(n):
+        t='-'.join(a[i:n])
+        L.append((t[-1::-1]+t[1:]).center(4*n-3,'-'))
+    print('\n'.join(L[:0:-1]+L))    
+        
+    
+if __name__ == '__main__':
+    n = int(input())
+    print_rangoli(n)
