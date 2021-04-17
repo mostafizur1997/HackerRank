@@ -1,0 +1,10 @@
+#https://www.hackerrank.com/challenges/word-order/problem
+from collections import Counter
+n=int(input())
+L=[]
+
+for i in range(n):
+    L.append(input())
+a=Counter(L)
+print(len(a))
+print(*a.values())
