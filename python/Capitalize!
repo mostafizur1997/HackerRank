@@ -1,0 +1,19 @@
+#https://www.hackerrank.com/challenges/capitalize/problem
+def solve(s):
+    l=s.split(' ') #split the string
+    a=''
+    for i in l:
+        a=a+i.capitalize()+' '
+        
+    return ''.join(a) #join the substring
+    
+if __name__ == '__main__':
+    fptr = open(os.environ['OUTPUT_PATH'], 'w')
+
+    s = input()
+
+    result = solve(s)
+
+    fptr.write(result + '\n')
+
+    fptr.close()
